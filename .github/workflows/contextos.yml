@@ -1,0 +1,11 @@
+name: Utilizando contextos
+on:
+  push
+jobs:
+  mostrar-variables:
+    env:
+      GITHUB: ${{ toJSON( github.env )}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir las variables
+        run: echo $GITHUB
