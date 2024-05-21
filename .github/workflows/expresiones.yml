@@ -1,11 +1,12 @@
 name: Expression
+run-name: ¡Estoy aprendiendo a usar Expresiones!
 on:
   workflow_dispatch:
     inputs:
       edad:
         description: 'Edad'
         required: true
-        type: integer
+        type: number
       nombre:
         description: 'Tu nombre'
         required: true
