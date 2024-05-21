@@ -4,7 +4,7 @@ on:
 jobs:
   mostrar-variables:
     env:
-      GITHUB: ${{ toJSON( github.env )}}
+      GITHUB: ${{ toJSON( github )}}
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir las variables
